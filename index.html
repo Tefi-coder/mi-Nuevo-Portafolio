@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <script src="script.js"></script>
+  </head>
+  <body>
+  <!--MENU ENCABEZADO-->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">Estefani</a>
+      </div>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+          <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+          <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+          <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="nav-resposive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+  <!--INICIO-->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img src="img/imgTf.jpg" class="circular" alt="" />
+      </div>
+      <h1>ESTEFANI MINUTTI</h1>
+      <h2>Estudiante de desarrollo Web</h2>
+      <div class="redes">
+        <a href="https://github.com/Tefi-coder"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+  <!--Seccion sobre mi-->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p>
+        <span>Hola soy Estefani Minutti</span>, tengo 21 años, actualmente soy estudiante de
+        <span>Jovenes a Programar 2024</span>. Estudiante especificamente de desarrollo web.<br>
+        Soy apasionada por los nuevos retos y me encanta aprender. Soy muy curiosa por lo mismo siempre trato de seguir aprendiendo nuevas habilidades.<br>
+      </p>
+      <div class="fila">
+          <!--Datos personales-->
+      <div class="col">
+         <h3>Datos Personales</h3>
+         <ul>
+          <li>
+              <strong>Cumpleaños</strong>
+              13-03-2003
+          </li>
+          <li>
+              <strong>Teléfono</strong>
+              091278687
+          </li>
+          <li>
+              <strong>Email</strong>
+              minuttiestefani1@gmail.com
+          </li>
+          <li>
+              <strong>Dirección</strong>
+              Montevideo-Uruguay
+          </li>
+        </ul>
+      </div>
+          <!--Intereses-->
+      <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+              <div class="intereses">
+                  <i class="fa-solid fa-language"></i>
+                  <span>Idiomas</span>
+              </div>
+              <div class="intereses">
+                  <i class="fa-solid fa-book"></i>
+                  <span>Leer</span>
+              </div>
+              <div class="intereses">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span>Musica</span>
+              </div>
+              <div class="intereses">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Fotografia</span>
+              </div>
+              <div class="intereses">
+                  <i class="fa-solid fa-puzzle-piece"></i>
+                  <span>Juegos de <br> logica</span>
+              </div>
+
+          
+
+      </div>
+    </div>
+  </section>
+  <!--Seccion Skills-->
+  <section class="skills" id="skills">
+    <div class="contenido-seccion">
+      <h2>Skills</h2>
+      <div class="fila">
+        <!-- Habilidades Técnicas -->
+        <div class="col">
+          <h3>Habilidades Técnicas</h3>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>HTML</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>CSS</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Inglés</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Cierre de la primera columna -->
+  
+        <!-- Habilidades Profesionales -->
+        <div class="col">
+          <h3>Habilidades Profesionales</h3>
+          <div class="skill">
+            <span>Comunicación</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Trabajo en Equipo</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Flexibilidad</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Proactividad</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Cierre de la segunda columna -->
+      </div> <!-- Cierre del contenedor fila -->
+    </div>
+  </section>
+   <!--Curriculum-->
+   <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+     <h2>Curriculum</h2>
+     <div class="fila">
+       <div class="col izquierda">
+         <h3>Educación</h3>
+         <div class="item izq">
+           <h4>Desarrollo Web</h4>
+           <span class="casa">Jovenes a Programar</span>
+           <span class="fecha">2024-En Curso</span>
+           <p>Estudiante en Jovenes a Programar-Ceibal</p>
+           <div class="conectori">
+             <div class="circuloi"></div>
+           </div>
+         </div>
+   
+     </div>
+     
+       
+         <div class="col derecha">
+           <h3>Experiencia Laboral</h3>
+           <div class="item der">
+             <h4>Desarrollo Web/Área IT</h4>
+             <span class="casa">En busqueda de mi primera experiencia laboral</span>
+             <span class="fecha">2024</span>
+             <div class="conectord">
+               <div class="circulod"></div>
+             </div>
+           </div>
+       </div>
+       
+   
+     
+     
+   
+   
+   
+   
+   </div>
+
+
+
+</section>
+ <!--Portafolio-->
+ <section id="portafolio" class="portafolio">
+    <div class="contenido-seccion">
+     <h2>Portafolio</h2>
+     <div class="galeria">
+      <div class="proyecto">
+        <img src="img/Captura de pantalla (31).png" alt="">  
+        <div class="overlay">
+          <h3>Proyecto Final Grupal JaP</h3>
+          <p>Desarrollo Web E-commerce</p>
+        </div>
+      </div>
+      <div class="proyecto">
+        <img src="img/Captura de pantalla (32).png" alt="">  
+        <div class="overlay">
+          <h3>Taller de clase</h3>
+          <p>Practicando con Fetch</p>
+        </div>
+      </div>
+      <div class="proyecto">
+        <img src="img/Captura de pantalla (33).png" alt="">  
+        <div class="overlay">
+          <h3>Taller de clase</h3>
+          <p>Practicando funcion sort()</p>
+        </div>
+      </div>
+     </div>
+
+   
+   
+   
+   
+   
+   
+   
+   
+    </div>
+</section>
+<!--Contacto-->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+      <h2>CONTACTO</h2>
+      <div class="fila">
+        <!--Formulario-->
+        <div class="col">
+          <input type="text" placeholder="Tú nombre" required>
+          <input type="text" placeholder="Tú número telefónico">
+          <input type="email" placeholder="Tú correo electronico" required>
+          <input type="text" placeholder="Tema">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+         
+          <button>Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        
+  
+       
+        </div>
+        <!--Mapa-->
+        <div class="col">
+          <img src="img/Captura de pantalla (34).png" alt="">
+          <div class="info">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Montevideo-Uruguay
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                Mi telefóno 091278687
+              </li>
+  
+  
+            </ul>
+  
+  
+          </div>
+  
+        </div>
+  
+        </div>
+  
+  
+  
+      </div>
+  
+  
+  
+  
+  
+    </div>
+  </section>
+  <!--Footer-->
+<footer>
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+      <a href="https://github.com/Tefi-coder"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    
+    </footer>
+  </body>
+</html>
